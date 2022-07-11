@@ -1,0 +1,28 @@
+body {
+    background-color:darkgrey;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  header {
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    background-image: url(sky.jfif);
+    background-repeat: cover;   
+  }
+
+  #showingWeatherFor {
+    display: block;
+    justify-content: center;
+    background-color:chartreuse;
+    border: black;
+  }
+ 
+
+   #todayWeather {
+      border: black solid 2px;;
+      background-color: goldenrod;
+    }

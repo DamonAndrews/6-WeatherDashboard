@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./dist/output.css"/>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Weather Dashboard</title>
 </head>
 
 <body>
+
     
     <!-- title @ top of page -->
-<header>
+<header class ="designForTodayWeather">
     <h1>Weather Dashboard</h1>
 </header>
 
     <!-- text above search box -->
-<div>Search for a City</div>
+<div><b>Search for a City</b></div>
 
-    <!-- search box & search button -->
-<input>
-<div class="text-center pt-4"> 
-    <button type = "submit" class="btn btn-danger" id="fetch-button">Search</button>
-</div>
-</input>
+    <!-- user input for city -->
+<input id = "chosenCity"></input>
+
+    <!-- search button -->
+    <button type = "input" class="btn btn-danger" id = "searchButton">Search</button>
+
+
 
     <!-- current selection display -->
-<div>
-    <h2> Showing Weather for:</h2>
+<div id ="showingWeatherFor"><h2 id = "showCityName"> Showing Weather for: ...Select a city to begin!!</h2></div>
+
+<div id="todayWeather">
+<section>
+</section>
 </div>
 
 
+<div ><h2>5 Day Forecast:</h2></div>
+
+
+<div id ="todayWeather"><section id="oneDay"></section></div>
+<div id ="todayWeather"><section id="twoDay"></section></div>
+<div id ="todayWeather"><section id="threeDay"></section></div>
+<div id ="todayWeather"><section id="fourDay"></section></div>
+<div id ="todayWeather"><section id="fiveDay"></section></div>  
+
+
+</section></div>
+
+
+
+
+<script src="./script.js"></script>
 </body>
